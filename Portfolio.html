@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span>Balaji K</span>
+            <ul class="sidebar">
+               <i onclick="hideBar()" class="fa-solid fa-xmark"></i>
+               <li><a class="active" href="#">Home</a></li>
+               <li><a href="#">Service</a></li>
+               <li><a href="#">Project</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+            <ul>
+               <li class="hideOn"><a class="active" href="#">Home</a></li>
+               <li class="hideOn"><a href="#">Service</a></li>
+               <li class="hideOn"><a href="#">Project</a></li>
+               <li class="hideOn"><a href="#">About</a></li>
+               <li class="hideOn"><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu">
+                <i  onclick="showSideBar()" class="fas fa-outdent bar"></i>
+            </div>
+        </nav>
+    </header>
+   <section class="hero">
+        <div class="hero-text">
+            <span>Hey, I'm Balaji K</span>
+            <h2>"Crafting a design with seamless and  responsive web experiences with clean, efficient front-end code."
+            </h2>
+            <button>Get in touch</button>
+        </div>
+        <div class="hero-img">
+            <img src="Heroimage.png" alt="Hero Pic">
+        </div>
+   </section>
+    <section class="service">
+        <div class="service-box">
+            <div class="box">
+                <div class="box-img">
+                    <img src="1-ser.svg" alt="service pic">
+                </div>
+                <div class="box-text">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt quas praesentium sapiente ex sequi quasi corrupti</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="2-ser.svg" alt="service pic">
+                </div>
+                <div class="box-text">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt quas praesentium sapiente ex sequi quasi corrupti</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="ser-3.svg" alt="service pic">
+                </div>
+                <div class="box-text">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt quas praesentium sapiente ex sequi quasi corrupti</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-img">
+                    <img src="4-ser.svg" alt="service pic">
+                </div>
+                <div class="box-text">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate incidunt quas praesentium sapiente ex sequi quasi corrupti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="about">
+        <div class="about-img">
+            <img src="About.jpeg" alt="Person with Labtop">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2> 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nihil ullam numquam quasi reprehenderit recusandae dolorem aliquam sunt nisi cumque? Aperiam non explicabo perferendis culpa.</p>
+            <button>More about me</button>
+        </div>
+    </section>
+    <section class="project-section">
+        <h2>My Recent Project</h2>
+        <p>Take a look at some of the project i have done.Let's Work Togeth</p>
+        <div class="project">
+           <div class="project-box-1">
+            <div class="project-box-app bg-1">
+                <img src="project-1.png" alt="">
+                <h4>App Landing Page</h4>
+            </div>
+            <div class="project-box-web bg-2">
+                <img src="project-3.webp" alt="">
+                <h4>App Landing Page</h4>
+            </div>
+          </div>
+          <div class="project-box-2">
+            <div class="project-box-web bg-3">
+                <img src="project-4.webp" alt="">
+                <h4>App Landing Page</h4>
+            </div>
+            <div class="project-box-app bg-4">
+                <img src="project-2.png" alt="">
+                <h4>App Landing Page</h4>
+            </div>
+            </div>
+        </div>
+    </section> 
+  <section class="contact">
+        <h1>Contact Me</h1>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Enter Your Name"> <br>
+
+            <label for="e-mail">E-mail</label> <br>
+            <input type="email" name="e-mail" id="e-mail" placeholder="abc@gmail.com"> <br>
+            <label for="phone number">Phone</label> <br>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="123 1234 133"><br>
+            <label for="message">Message</label> <br>
+            <textarea name="message" id="message">Leave Your Message</textarea> <br>
+
+            <button>Send Message</button>
+        </form>
+    </section>
+    <script>
+        function showSideBar(){
+            const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='flex';
+        }
+        function hideBar(){
+            const sidebar=document.querySelector('.sidebar');
+            sidebar.style.display='none';
+        }
+        
+    </script>
+</body>
+</html>
